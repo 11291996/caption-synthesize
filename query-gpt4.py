@@ -70,7 +70,7 @@ def query_image_with_tags(image_path, tags_txt):
         "Authorization": f"Bearer {API_KEY}"
     }
     tag_txt_formatted = TAGS_TEMPLATE.replace('{TAGS}', tags)
-    assert "general" in tag_txt_formatted, "Tags must contain general tag"
+    #assert "general" in tag_txt_formatted, "Tags must contain general tag"
     payload = {
         "model": "gpt-4-vision-preview",
         "messages": [
